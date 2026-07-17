@@ -1,0 +1,9 @@
+# Ignore the large data file
+power_consumption/household_power_consumption.txt
+
+# Ignore Python caches
+**/__pycache__/
+*.pyc
+
+# Ignore local database
+power_consumption/users.db
