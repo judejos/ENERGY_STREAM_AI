@@ -27,6 +27,9 @@ app.config['MAIL_DEFAULT_SENDER'] = 'your-email@gmail.com'
 mail = Mail(app)
 CORS(app)
 
+# Ensure the SQLite database is initialized automatically on startup
+database.init_db()
+
 # Global variables for convenience and caching
 DATA_FILE = 'household_power_consumption.txt'
 scaler = None
